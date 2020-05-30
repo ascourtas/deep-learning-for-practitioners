@@ -107,4 +107,119 @@ Some supplementary materials:
 
 - [Supplemental presentation by one of the authors of the paper](https://cds.cern.ch/record/2306315)
 
+#### Feature-wise Transformations: A simple and surprisingly effective family of conditioning mechanisms (Ari)
+- [Interactive paper](https://distill.pub/2018/feature-wise-transformations)
+- [Code for FiLM, the main focus of the paper](https://github.com/ethanjperez/film/blob/master/vr/models/filmed_net.py#L209)
+- [Presentation Slides](https://docs.google.com/presentation/d/1fhXyW1vivQe8Ku-1o59HmmevjbxIhBzpcxKfqJZK3Ag/edit?usp=sharing)
+##### Supplementary materials
+ - [The original FiLM (2017) paper](https://arxiv.org/pdf/1709.07871.pdf), if you want a more technical explanation 
+ - [Further description of feature-wise conditioning](https://towardsdatascience.com/conditional-love-the-rise-of-renormalization-techniques-for-neural-network-conditioning-14350cb10a34) with more context on its relationship to batch normalization and other DL techniques
+   - I'd highly recommend this resource, especially if some parts of the presentation were unclear!
+ - Fun thing! [Play around with GauGAN](https://www.nvidia.com/en-us/research/ai-playground/) (scroll down a bit), which uses feature-wise conditioning, to get a better feel for the power of conditioning :sparkles:
+    - Concise description of GauGAN implementation [here](https://nvlabs.github.io/SPADE/)
+    
 
+### Week five
+ 
+#### StyleGAN and StyleGAN2 (David, Joshua, and Thomas)
+ StyleGAN:
+ - [Paper](https://arxiv.org/pdf/1406.2661.pdf)
+ - [Codebase](https://github.com/NVlabs/stylegan)
+ - [Supplemental video](https://youtu.be/kSLJriaOumA)
+ 
+ StyleGAN2:
+ - [Paper](https://arxiv.org/pdf/1912.04958.pdf)
+ - [Codebase](https://github.com/NVlabs/stylegan2)
+ - [Supplemental video](https://youtu.be/c-NJtV9Jvp0)
+ - [15 minutes of face interpolations w/ StyleGAN2](https://www.youtube.com/watch?v=6E1_dgYlifc)
+
+#### Batch Normalization
+* Original Paper: [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/pdf/1502.03167.pdf)
+* Andrew Ng Videos
+  * [Normalizing Activations in a Networks](https://www.youtube.com/watch?v=tNIpEZLv_eg)
+  * [Why does batch normalization work?](https://www.youtube.com/watch?v=nUUqwaxLnWs)
+  * [Batch norm at test time](https://www.youtube.com/watch?v=5qefnAek8OA)
+* Presenting Paper: [How Batch Normalization Works](https://arxiv.org/pdf/1805.11604.pdf)
+  * [Overview Video](https://youtu.be/ZOabsYbmBRM)
+* [PyTorch source code for Batch Norm](https://pytorch.org/docs/stable/_modules/torch/nn/modules/batchnorm.html#BatchNorm2d)
+
+
+
+### Week Six
+
+#### AutoGAN
+* [Paper: AutoGAN](https://arxiv.org/abs/1908.03835)
+* [Code](https://github.com/TAMU-VITA/AutoGAN)
+* [Presentation](https://drive.google.com/file/d/1bD2eyPmuI7zVdjwdbBl96-sDv0FIYTbi/view?usp=sharing)  
+* Supplement Material
+  * [Progressive Growing of GANs](https://arxiv.org/pdf/1710.10196.pdf)
+  * [Neural Architecture Search with Reinforcement Learning](https://arxiv.org/abs/1611.01578)
+  * [Progressive NAS](https://arxiv.org/pdf/1712.00559.pdf)
+  
+### Universal Language Model Fine Tuning (ULMFiT)
+* [Original Paper](https://arxiv.org/pdf/1801.06146.pdf)
+* [Link to presentation](https://docs.google.com/presentation/d/15FymkSvt4srHr4DKywgl6ywTgBxy2a9_RK2P-rjTlQM/edit?usp=sharing)
+* [Code from our presentation](https://github.com/jackbandy/deep_learning_ulmfit)
+
+* [FastAI/ULMFiT Support Forum](https://forums.fast.ai/c/part2-v2/)
+* [ULMFiT Video tutorial](https://www.youtube.com/watch?v=vnOpEwmtFJ8&feature=youtu.be&t=4511)
+ * [Notebooks used in tutorial](https://github.com/fastai/course-v3/tree/master/nbs/dl2)
+* [More Relevant FastAI notebooks](https://github.com/fastai/fastbook)
+* [OpenAI's response paper](https://www.cs.ubc.ca/~amuham01/LING530/papers/radford2018improving.pdf)
+ * [Colab notebook](https://colab.research.google.com/github/secsilm/awsome-colabs/blob/master/nlp/classification/TransferLearningNLP.ipynb)
+
+### Week Seven
+
+#### Learning to Learn How to Learn: Self-Adaptive Visual Navigation using Meta-Learning
+* [Link to paper](https://arxiv.org/pdf/1812.00971.pdf)
+* [Link to codebase](https://github.com/allenai/savn)
+* [Presentation](https://docs.google.com/presentation/d/1PLIpbG2N854rPWIhyKf9HmusqsGChtfmPXJrEbrzRhg/edit?usp=sharing)
+
+##### Supplement materials:
+* [Deep Reinforcement Learning: Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/)
+* [Brief introduction to Meta Learning](https://medium.com/huggingface/from-zero-to-research-an-introduction-to-meta-learning-8e16e677f78a)
+* [Learning to learning brief explanation](https://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/)
+* [Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks](https://arxiv.org/pdf/1703.03400.pdf)
+* [Explanatory video by the author of MAML on the next generation of Robot Learning](https://www.youtube.com/watch?time_continue=711&v=tcFLwgqO7G0&feature=emb_logo)
+
+#### Multivariate LSTM-FCNs for Time Series Classification
+* [Link to paper](https://arxiv.org/pdf/1801.04503.pdf)
+* [Link to codebase](https://github.com/titu1994/MLSTM-FCN)
+
+##### Additional Papers
+* [LSTM Fully Convolutional Networks for Time Series Classification](https://arxiv.org/abs/1709.05206)
+* [Insights into LSTM Fully Convolutional Networks for Time Series Classification](https://arxiv.org/pdf/1902.10756.pdf)
+* [Time Series Classification from Scratch with Deep Neural Networks: A Strong Baseline](https://arxiv.org/pdf/1611.06455.pdf)
+* [Deep learning for time series classification: a review](https://arxiv.org/pdf/1809.04356.pdf)
+* [Time-Series Classification with COTE: The Collective of Transformation-Based Ensembles](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7069254)
+
+### Week Eight
+
+#### Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks
+* [Link to paper](https://junyanz.github.io/CycleGAN/)
+* [Link to codebase](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+  
+##### Supplement materials:
+* [Image-to-Image Translation with Conditional Adversarial Nets](https://phillipi.github.io/pix2pix/)
+* [Unsupervised Image-to-Image Translation Networks](https://arxiv.org/abs/1703.00848)
+* [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)
+* [Perceptual losses for real-time style transfer and super-resolution](https://arxiv.org/abs/1603.08155)
+
+#### Waveglow
+* [Link to paper](https://arxiv.org/abs/1811.00002)
+* [Link to codebase](https://github.com/NVIDIA/waveglow)
+* [Presentation Slide (draft) ](https://github.com/asadayuki/waveglow/blob/master/doc/Waveglow_presentation.pdf)
+* [Code Analysis](https://github.com/asadayuki/waveglow/blob/master/doc/CodeAnalysis.pdf)
+  
+##### Supplement materials:
+* [Flow-based Deep Generative Models](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html)
+* [WaveNet: A generative model for raw audio](https://deepmind.com/blog/article/wavenet-generative-model-raw-audio)
+* [Normalizing Flows Tutorial, Part 1: Distributions and Determinants](https://blog.evjang.com/2018/01/nf1.html)
+* [Normalizing Flows: An Introduction and Review of Current Methods](https://arxiv.org/abs/1908.09257)
+
+
+## Sponsors
+
+Thanks so much to PaperSpace for supporting this course with GPU credits. Try PaperSpace [here](https://www.paperspace.com/).
+
+<img src="PoweredBy.png" alt="Thanks PaperSpace" width="400"/>
